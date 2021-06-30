@@ -3,9 +3,9 @@
   "version": "1.0",
   "data": "data.json",
   "logo": {
-    "file": "dbk.png",
-    "link": "https://pim.hu/dbk",
-    "text": "PIM DBK"
+    "file": "",
+    "link": "",
+    "text": ""
   },
   "text": {
     "more": "Test graph",
@@ -23,12 +23,12 @@
     "hoverBehavior": "default"
   },
   "informationPanel": {
-    "groupByEdgeDirection": true,
-    "imageAttribute": true
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
   },
   "sigma": {
     "drawingProperties": {
-      "defaultEdgeType": "straight",
+      "defaultEdgeType": "curve",
       "defaultHoverLabelBGColor": "#002147",
       "defaultLabelBGColor": "#ddd",
       "activeFontStyle": "bold",
@@ -40,8 +40,8 @@
       "defaultLabelSize": 14
     },
     "graphProperties": {
-      "maxEdgeSize": 3,
-      "minEdgeSize": 1,
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
       "minNodeSize": 1,
       "maxNodeSize": 7
     },
