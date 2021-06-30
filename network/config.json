@@ -13,9 +13,9 @@
     "title": "test"
   },
   "legend": {
-    "edgeLabel": "Edge desc",
-    "colorLabel": "Custom",
-    "nodeLabel": "Node desc"
+    "edgeLabel": "Kapcsolatok",
+    "colorLabel": "Családok",
+    "nodeLabel": "Személyek"
   },
   "features": {
     "search": true,
