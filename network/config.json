@@ -3,9 +3,9 @@
   "version": "1.0",
   "data": "data.json",
   "logo": {
-    "file": "",
-    "link": "",
-    "text": ""
+    "file": "dbk_logo_hun_1soros.eps",
+    "link": "https://pim.hu/dbk",
+    "text": "PIM DBK"
   },
   "text": {
     "more": "Test graph",
@@ -23,8 +23,8 @@
     "hoverBehavior": "default"
   },
   "informationPanel": {
-    "groupByEdgeDirection": false,
-    "imageAttribute": false
+    "groupByEdgeDirection": true,
+    "imageAttribute": true
   },
   "sigma": {
     "drawingProperties": {
@@ -40,8 +40,8 @@
       "defaultLabelSize": 14
     },
     "graphProperties": {
-      "maxEdgeSize": 10,
-      "minEdgeSize": 5,
+      "maxEdgeSize": 3,
+      "minEdgeSize": 1,
       "minNodeSize": 1,
       "maxNodeSize": 7
     },
