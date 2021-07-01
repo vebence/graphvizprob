@@ -466,8 +466,8 @@ display: none;
 #zoom {
 	z-index:999;
 	position: fixed;
-	left: 45%;
-	bottom: 25px;
+	left: 10%;
+	bottom: 20px;
 	margin:0 auto;
 	padding: 0;
 	-webkit-touch-callout: none;
@@ -481,7 +481,7 @@ display: none;
 
 #zoom .z {
 	background:#fff;
-	background-color:rgba(255,255,255,0.7);
+	background-color:rgba(210,229,218,0.8);
 	width: 40px;
 	height: 40px;
 	cursor: pointer;
@@ -493,17 +493,17 @@ display: none;
 
 #zoom .z[rel=center] {
 	background-image: url('../images/zoom_reset.png');
-	background-position:left;
+	background-position:center;
 }
 
 #zoom .z[rel=in] {
 	background-image: url('../images/zoom_in.png');
-	background-position:left; 
+	background-position:center; 
 }
 
 #zoom .z[rel=out] {
 	background-image: url('../images/zoom_out.png');
-	background-position:left; 
+	background-position:center; 
 }
 
 .line {
