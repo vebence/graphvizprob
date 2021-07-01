@@ -529,13 +529,13 @@ function nodeActive(a) {
 	if (groupByDirection) {
 		size=Object.size(mutual);
 		f.push("<h2>Házastárs (" + size + ")</h2>");
-		(size>0)? f=f.concat(createList(mutual)) : f.push("No mutual links<br>");
+		(size>0)? f=f.concat(createList(mutual)) : f.push("-<br>");
 		size=Object.size(incoming);
 		f.push("<h2>Szülők (" + size + ")</h2>");
-		(size>0)? f=f.concat(createList(incoming)) : f.push("No incoming links<br>");
+		(size>0)? f=f.concat(createList(incoming)) : f.push("-<br>");
 		size=Object.size(outgoing);
 		f.push("<h2>Gyerekek (" + size + ")</h2>");
-		(size>0)? f=f.concat(createList(outgoing)) : f.push("No outgoing links<br>");
+		(size>0)? f=f.concat(createList(outgoing)) : f.push("-<br>");
 	} else {
 		f=f.concat(createList(sigInst.neighbors));
 	}
