@@ -19,10 +19,11 @@
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": true,
+    "groupSelectorAttribute": false,
     "hoverBehavior": "default"
   },
   "informationPanel": {
+  "label":"Adatlap",
     "groupByEdgeDirection": true,
     "imageAttribute": "Label"
   },
