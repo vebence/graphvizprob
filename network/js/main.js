@@ -369,7 +369,7 @@ function Search(a) {
         this.searching = !0;
         this.lastSearch = a;
         this.results.empty();
-        if (2 >= a.length) this.results.html("<i>You must search for a name with a minimum of 3 letters.</i>");
+        if (2 >= a.length) this.results.html("<i>Legalább 3 betűt írj be a kereséshez.</i>");
         else {
             sigInst.iterNodes(function (a) {
                 g.test(a.label.toLowerCase()) && c.push({
@@ -378,9 +378,9 @@ function Search(a) {
                 })
             });
             c.length ? (b = !0, nodeActive(c[0].id)) : b = showCluster(a);
-            a = ["<b>Search Results: </b>"];
+            a = ["<b>Keresési eredmények: </b>"];
             if (1 < c.length) for (var d = 0, h = c.length; d < h; d++) a.push('<a href="#' + c[d].name + '" onclick="nodeActive(\'' + c[d].id + "')\">" + c[d].name + "</a>");
-            0 == c.length && !b && a.push("<i>No results found.</i>");
+            0 == c.length && !b && a.push("<i>Nincs találat.</i>");
             1 < a.length && this.results.html(a.join(""));
            }
         if(c.length!=1) this.results.show();
