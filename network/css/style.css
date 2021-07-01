@@ -22,7 +22,7 @@ html,body {
 	margin: 0px;
 	padding: 0px;
 	font-size: 12px;
-	font-family: "Times New Roman", Times, serif;;
+	font-family: nexa;
 	line-height:1.25em;
 }
 
@@ -37,7 +37,7 @@ html,body {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: #282a4d;
+	background-color: #575757;
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-touch-callout: none;
