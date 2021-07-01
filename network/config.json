@@ -23,7 +23,7 @@
     "hoverBehavior": "default"
   },
   "informationPanel": {
-  "label":"Adatlap",
+  "title":"Adatlap",
     "groupByEdgeDirection": true,
     "imageAttribute": "Label"
   },
