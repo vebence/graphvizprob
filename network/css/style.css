@@ -13,7 +13,7 @@ margin: 0px;
 }
 
 .cf {
-	zoom: 1;
+	zoom: 0;
 }
 
 html,body {
@@ -22,7 +22,7 @@ html,body {
 	margin: 0px;
 	padding: 0px;
 	font-size: 12px;
-	font-family: sens-serif;
+	font-family: sans-serif;
 	line-height:1.25em;
 }
 
