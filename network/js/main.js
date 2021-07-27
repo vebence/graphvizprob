@@ -277,7 +277,7 @@ function configSigmaElements(config) {
     $GP.bg2 = $(sigInst._core.domElements.bg2);
     var a = [],
         b,x=1;
-		for (b in sigInst.clusters) a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Group ' + (x++) + ' (' + sigInst.clusters[b].length + ' fő)</a></div>');
+		for (b in sigInst.clusters) a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Család ' + (x++) + ' (' + sigInst.clusters[b].length + ' fő)</a></div>');
     //a.sort();
     $GP.cluster.content(a.join(""));
     b = {
@@ -531,10 +531,10 @@ function nodeActive(a) {
 		f.push("<h2>Házastárs (" + size + ")</h2>");
 		(size>0)? f=f.concat(createList(mutual)) : f.push("-<br>");
 		size=Object.size(incoming);
-		f.push("<h2>Szülők (" + size + ")</h2>");
+		f.push("<h2>Szülő (" + size + ")</h2>");
 		(size>0)? f=f.concat(createList(incoming)) : f.push("-<br>");
 		size=Object.size(outgoing);
-		f.push("<h2>Gyerekek (" + size + ")</h2>");
+		f.push("<h2>Gyerek (" + size + ")</h2>");
 		(size>0)? f=f.concat(createList(outgoing)) : f.push("-<br>");
 	} else {
 		f=f.concat(createList(sigInst.neighbors));
