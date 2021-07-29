@@ -608,7 +608,7 @@ function showCluster(a) {
         }
         sigInst.clusters[a] = e;
         sigInst.draw(2, 2, 2, 2);
-        $GP.info_name.html("<b>" + a + "</b>");
+        $GP.info_name.html(); //"<b>" + a + "</b>"
         $GP.info_data.hide();
         $GP.info_p.html("Családtagok:");
         $GP.info_link.find("ul").html(f.join(""));
