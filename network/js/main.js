@@ -277,7 +277,7 @@ function configSigmaElements(config) {
     $GP.bg2 = $(sigInst._core.domElements.bg2);
     var a = [],
         b,x=1;
-		for (b in sigInst.clusters) a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Group ' + (x++) + ' (' + sigInst.clusters[b].length + ' members)</a></div>');
+		for (b in sigInst.clusters) a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Család ' + (x++) + ' (' + sigInst.clusters[b].length + ' fő)</a></div>');
     //a.sort();
     $GP.cluster.content(a.join(""));
     b = {
@@ -369,7 +369,7 @@ function Search(a) {
         this.searching = !0;
         this.lastSearch = a;
         this.results.empty();
-        if (2 >= a.length) this.results.html("<i>You must search for a name with a minimum of 3 letters.</i>");
+        if (2 >= a.length) this.results.html("<i>Legalább 3 karaktert írj be a kereséshez.</i>");
         else {
             sigInst.iterNodes(function (a) {
                 g.test(a.label.toLowerCase()) && c.push({
@@ -378,9 +378,9 @@ function Search(a) {
                 })
             });
             c.length ? (b = !0, nodeActive(c[0].id)) : b = showCluster(a);
-            a = ["<b>Search Results: </b>"];
+            a = ["<b>Keresési eredmények: </b>"];
             if (1 < c.length) for (var d = 0, h = c.length; d < h; d++) a.push('<a href="#' + c[d].name + '" onclick="nodeActive(\'' + c[d].id + "')\">" + c[d].name + "</a>");
-            0 == c.length && !b && a.push("<i>No results found.</i>");
+            0 == c.length && !b && a.push("<i>Nincs találat.</i>");
             1 < a.length && this.results.html(a.join(""));
            }
         if(c.length!=1) this.results.show();
@@ -528,14 +528,14 @@ function nodeActive(a) {
 
 	if (groupByDirection) {
 		size=Object.size(mutual);
-		f.push("<h2>Mututal (" + size + ")</h2>");
-		(size>0)? f=f.concat(createList(mutual)) : f.push("No mutual links<br>");
+		f.push("<h2>Házastárs (" + size + ")</h2>");
+		(size>0)? f=f.concat(createList(mutual)) : f.push("-<br>");
 		size=Object.size(incoming);
-		f.push("<h2>Incoming (" + size + ")</h2>");
-		(size>0)? f=f.concat(createList(incoming)) : f.push("No incoming links<br>");
+		f.push("<h2>Szülő (" + size + ")</h2>");
+		(size>0)? f=f.concat(createList(incoming)) : f.push("-<br>");
 		size=Object.size(outgoing);
-		f.push("<h2>Outgoing (" + size + ")</h2>");
-		(size>0)? f=f.concat(createList(outgoing)) : f.push("No outgoing links<br>");
+		f.push("<h2>Gyerek (" + size + ")</h2>");
+		(size>0)? f=f.concat(createList(outgoing)) : f.push("-<br>");
 	} else {
 		f=f.concat(createList(sigInst.neighbors));
 	}
@@ -580,7 +580,7 @@ function nodeActive(a) {
         $GP.info_data.html(e.join("<br/>"))
     }
     $GP.info_data.show();
-    $GP.info_p.html("Connections:");
+    $GP.info_p.html("Családi kapcsolatok:");
     $GP.info.animate({width:'show'},350);
 	$GP.info_donnees.hide();
 	$GP.info_donnees.show();
@@ -608,9 +608,9 @@ function showCluster(a) {
         }
         sigInst.clusters[a] = e;
         sigInst.draw(2, 2, 2, 2);
-        $GP.info_name.html("<b>" + a + "</b>");
+        $GP.info_name.html(false); //"<b>" + a + "</b>"
         $GP.info_data.hide();
-        $GP.info_p.html("Group Members:");
+        $GP.info_p.html("Családtagok:");
         $GP.info_link.find("ul").html(f.join(""));
         $GP.info.animate({width:'show'},350);
         $GP.search.clean();
