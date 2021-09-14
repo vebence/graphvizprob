@@ -3,14 +3,14 @@
   "version": "1.0",
   "data": "data.json",
   "logo": {
-    "file": "dbk.png",
-    "link": "https://pim.hu/dbk",
-    "text": "PIM DBK"
+    "file": "",
+    "link": "",
+    "text": ""
   },
   "text": {
     "more": "Móricz Zsigmond és első felesége, Holics Janka családi kapcsolatait kirajzoló gráf, kézirattári\nés genealógiai kutatások eredménye.\nA vizualizáción négy különböző színnel jelöltük felmenőiket, illetve középen kiemelve\nMóricz Zsigmond és Holics Janka szűk családját. Móricz Zsigmond apai ágán a Móricz\ncsalád 62 tagot számlál, az anyai, Pallagi-ág 90 felmenőt. Holics Janka apai felmenői közül\n142, az anyai ágon, a Szklenárok közül 101 személyt sikerült beazonosítani. Az egyesített\ncsaládfa összesen öt nemzedéket ölel fel, melyből Zsigmond és Janka dédszülei határolják a\nlegtávolabbit, gyermekeik pedig az utolsó generáció, amelyet ábrázoltunk. A személyiségi\njogok tiszteletben tartása érdekében a kortárs leszármazottakat nem tüntettük fel a családfán.\nA gráfon a teljes hálózatot láthatjuk, amely a kiterjedt rokonságot jeleníti meg. Ha közelítünk,\nelőkerülnek az egyes nevek, melyek között a vastagabb élek jelentik a házastársi, a\nvékonyabbak pedig a szülő-gyermek kapcsolatot. Ezenkívül szűréssel lehetőség van a családi\nágakat külön is megtekinteni. (Család 1: Holics; Család 2: Szklenár; Család 3: Móricz; Család\n4: Pallagi; Család 5: Móricz szűk családja).\nEgy-egy névre kattintva, jobb oldalon láthatóvá válnak az adott személy alapadatai, illetve\nközvetlen kapcsolatai. A relációkon keresztül pedig fel lehet fedezni az eddig feltárt, teljes\nrokonsági hálózatot.",
     "intro": "",
-    "title": "Móricz-családfa"
+    "title": "test"
   },
   "legend": {
     "edgeLabel": "Kapcsolatok",
@@ -19,21 +19,20 @@
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": true,
+    "groupSelectorAttribute": false,
     "hoverBehavior": "default"
   },
   "informationPanel": {
-  "title":"Adatlap",
-    "groupByEdgeDirection": true,
-    "imageAttribute": false
+    "groupByEdgeDirection": false,
+    "imageAttribute": "Label"
   },
   "sigma": {
     "drawingProperties": {
-      "defaultEdgeType": "straight",
+      "defaultEdgeType": "curve",
       "defaultHoverLabelBGColor": "#002147",
       "defaultLabelBGColor": "#ddd",
       "activeFontStyle": "bold",
-      "defaultLabelColor": "#fff",
+      "defaultLabelColor": "#000",
       "labelThreshold": 10,
       "defaultLabelHoverColor": "#fff",
       "fontStyle": "bold",
@@ -41,8 +40,8 @@
       "defaultLabelSize": 14
     },
     "graphProperties": {
-      "maxEdgeSize": 10,
-      "minEdgeSize": 1,
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
       "minNodeSize": 1,
       "maxNodeSize": 7
     },
